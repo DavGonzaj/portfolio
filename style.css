@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+
 * {
   color: black;
   text-decoration: none;
@@ -5,10 +7,42 @@
   padding: 0px;
 }
 
+body{
+  font-family: 'Roboto', sans-serif !important;
+  /* background: linear-gradient( */
+   /* 100deg,
+  #ffc800,
+  #feee3e,
+  #ffc800,
+  #feee3e
+  );
+height: 100vh;
+background-size: 400% 400% !important;
+animation: gradient 15s ease infinite; */
+}
+
+/* @keyframes gradient{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+} */
+
+
+
+
+
+/*nav bar*/
+
 .navBar {
   background-color: white;
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   padding-top: 20px;
 }
 
@@ -79,8 +113,8 @@ Removes the underline with text decoration = none.*/
   /* background-color:#ce3635; */
   text-align: center;
   color: black;
-  padding-top: 10em;
-  padding-bottom: 400px;
+  padding-top: 30em;
+  padding-bottom: 30em;
 }
 
 /* project container */
@@ -104,6 +138,9 @@ Removes the underline with text decoration = none.*/
   transform: scale(1.2);
   box-shadow: 2px 2px 5px black;
 }
+
+
+
 /* button and link spacing */
 
 .card-body a{
@@ -194,13 +231,65 @@ padding-top: 20px;
 /* About me container */
 
 .aboutContainer {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  padding-bottom: 40px;
+
 }
+
+
+.aboutMeCard {
+  padding-top: 5em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.coverPageSlide {
+
+  border-radius: 100px;
+  height: 30vh;
+  width: 20vw;
+  background-image: url("https://images.pexels.com/photos/1006965/pexels-photo-1006965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  animation: myAnimation alternate infinite 14s;
+  -webkit-animation: myAnimation alternate infinite 14s;
+  -moz-animation: myAnimation alternate infinite 14s;
+  -ms-animation: myAnimation alternate infinite 14s;
+  -o-animation: myAnimation alternate infinite 14s;
+}
+@keyframes myAnimation {
+  33.33% {
+    background-image: url("https://images.pexels.com/photos/1141853/pexels-photo-1141853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  }
+  66.66% {
+    background-image: url("https://images.pexels.com/photos/711089/pexels-photo-711089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  }
+  99.99% {
+    background-image: url("https://images.pexels.com/photos/210540/pexels-photo-210540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  }
+}
+
+
+
 
 /* Contact me container */
 
-.contactContainer {
-  display: flex;
-  justify-content: center;
+.contactHead {
+text-align: center;
 }
+
+
+/* @media (min-width: 992px)
+.container {
+    max-width: 960px;
+}
+
+@media (min-width: 1200px)
+.container {
+    max-width: 1140px;} */
+
+
+
+
+    
